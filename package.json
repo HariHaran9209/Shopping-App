@@ -1,0 +1,39 @@
+{
+  "name": "shopping-app",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "install:admin": "cd admin && npm install",
+    
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "build:admin": "cd admin && npm run build",
+    
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:admin": "cd admin && npm run dev",
+
+    "preview:frontend": "cd frontend && npm run preview",
+    "preview:admin": "cd admin && npm run preview",
+    
+    "start:frontend": "cd frontend && npm run preview", 
+    "start:admin": "cd admin && npm run preview", 
+    "start:backend": "cd backend && npm run server"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "vite": "^6.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.1",
+    "express": "^4.17.1", 
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "vite": "^6.2.0"
+  }
+}
