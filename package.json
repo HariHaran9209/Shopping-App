@@ -3,24 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "install:frontend": "cd frontend && npm install",
-    "install:backend": "cd backend && npm install",
-    "install:admin": "cd admin && npm install",
-    
-    "build:frontend": "cd frontend && npm run build",     // This script runs build for frontend
-    "build:backend": "cd backend && npm run build",       // This script runs build for backend
-    "build:admin": "cd admin && npm run build",           // This script runs build for admin
-    
-    "dev:frontend": "cd frontend && npm run dev",
-    "dev:backend": "cd backend && npm run dev",
-    "dev:admin": "cd admin && npm run dev",
-
-    "preview:frontend": "cd frontend && npm run preview",
-    "preview:admin": "cd admin && npm run preview",
-    
-    "start:frontend": "cd frontend && npm run preview", 
-    "start:admin": "cd admin && npm run preview", 
-    "start:backend": "cd backend && npm run server"
+    "build:frontend": "cd frontend && npm run build",
+    "build:admin": "cd admin && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "build": "npm run build:frontend && npm run build:admin && npm run build:backend"
   },
   "dependencies": {
     "axios": "^1.8.4",
