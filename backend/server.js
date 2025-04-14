@@ -31,7 +31,7 @@ app.get("*", (req, res) => {
 	res.sendFile(path.join(__dirname, "frontend", "index.html"));
 });
 
-server.listen(PORT, () => {
+app.listen(PORT, () => {
 	// DB Connection
 	connectDB();
 	console.log(`Server Running on port ${PORT}`);
