@@ -26,8 +26,15 @@ app.use('/api/user', userRouter)
 app.use('/api/cart', cartRouter)
 app.use('/api/order', orderRouter)
 
-app.listen(port, () => {
-    console.log(`Server Stated On http://localhost:${port}`)
-})
+app.use(express.static(path.join(__dirname, "/frontend")));
+
+app.get("*", (req, res) => {
+	res.sendFile(path.join(__dirname, "frontend", "index.html"));
+});
+
+server.listen(PORT, () => {
+	connectToMongoDB();
+	console.log(`Server Running on port ${PORT}`);
+});
 
 // mongodb+srv://codemash44:<db_password>@cluster0.wodocp7.mongodb.net/?
