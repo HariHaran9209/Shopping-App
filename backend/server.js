@@ -34,7 +34,7 @@ app.get("*", (req, res) => {
 app.listen(port, () => {
 	// DB Connection
 	connectDB();
-	console.log(`Server Running on port ${PORT}`);
+	console.log(`Server Running on port ${port}`);
 });
 
 // mongodb+srv://codemash44:<db_password>@cluster0.wodocp7.mongodb.net/?
